@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChattisVani Documentation</title>
+    <style>
+        /* CSS Variables for colors from the app UI */
+        :root {
+            --brand-orange: #E5A041;
+            --light-grey: #f8f9fa; /* A clean light grey for backgrounds */
+            --text-dark: #212529;
+            --text-muted: #6c757d;
+            --background-color: #ffffff;
+            --code-bg: #2d3748;
+            --code-text: #e2e8f0;
+            --border-color: #dee2e6;
+        }
+
+        /* General Body Styles */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header Styling */
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--brand-orange);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .header-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        /* Section and Typography Styling */
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--brand-orange);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        p, ul, ol {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--brand-orange);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        strong {
+            color: var(--text-dark);
+        }
+
+        /* Code Block Styling */
+        pre {
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin: 1.5rem 0;
+        }
+
+        code {
+            font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+        }
+        
+        /* Inline code for commands within text */
+        p > code, li > code {
+            background-color: var(--light-grey);
+            color: var(--text-dark);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Footer Styling */
+        .app-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .app-footer a {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        
+        .app-footer .heart {
+            color: #e25555;
+            display: inline-block;
+            transform: translateY(2px);
+        }
+
+        /* Responsive Styles for Mobile Devices */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .app-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+                margin-bottom: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            pre {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="app-header">
+            <!-- <div class="header-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 12h-2V9c0-4.42-3.58-8-8-8S2 4.58 2 9v3H0v2h2v2a2 2 0 0 0 2 2h1v3h2v-3h8v3h2v-3h1a2 2 0 0 0 2-2v-2h2v-2zM6 9c0-3.31 2.69-6 6-6s6 2.69 6 6v3H6V9z"/></svg>
+            </div> -->
+            <h1>ChattisVani</h1>
+        </header>
+
+        <main>
+            <section id="introduction">
+                <h2>Empowering Chhattisgarh with Local Language AI</h2>
+                <p>ChattisVani is a revolutionary application designed to bridge the digital divide and bring the power of Large Language Models (LLMs) to the tribal and local communities of Chhattisgarh. Recognizing the importance of communication in one's native tongue, this application enables users to interact with advanced AI technologies using their local languages.</p>
+                <p>Our mission is to make AI accessible and useful for everyone in Chhattisgarh, fostering digital inclusion and empowering communities by providing information and services in a language they understand and are comfortable with.</p>
+            </section>
+
+            <section id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>Local Language Support:</strong> Interact with the AI using various local languages spoken in Chhattisgarh.</li>
+                    <li><strong>LLM Integration:</strong> Leverages the capabilities of advanced Large Language Models to provide intelligent responses and assistance.</li>
+                    <li><strong>User-Friendly Interface:</strong> Designed with simplicity in mind to ensure ease of use for all members of the community.</li>
+                </ul>
+            </section>
+
+            <section id="model-developer">
+                <h2>AI Model</h2>
+                <p>This application leverages the power of a Large Language Model (LLM) to understand and generate responses in local languages.</p>
+                
+                <h2>About the Developer</h2>
+                <p>This application was developed by <strong>Sameer Banchhor</strong>, a 3rd-semester Master of Science student in Computer Science and Data Science.</p>
+            </section>
+            
+            <section id="getting-started">
+                <h2>Getting Started</h2>
+                <p>To get your local copy up and running, follow these simple steps.</p>
+            
+                <h3>Prerequisites</h3>
+                <p>Make sure you have Node.js and npm (or yarn/pnpm) installed on your system.</p>
+            
+                <h3>Installation</h3>
+                <ol>
+                    <li>Clone the repository:
+                        <pre><code>git clone https://github.com/sameer-banchhor-git/ChattisVani</code></pre>
+                    </li>
+                    <li>Navigate to the project directory:
+                        <pre><code>cd ChattisVani</code></pre>
+                    </li>
+                    <li>Install dependencies:
+                        <pre><code>npm install
+# or yarn install
+# or pnpm install</code></pre>
+                    </li>
+                </ol>
+            
+                <h3>Running the Application</h3>
+                <p>To run the application in development mode:</p>
+                <pre><code>npm run dev
+# or yarn dev
+# or pnpm dev</code></pre>
+                <p>Open <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">http://localhost:3000</a> with your browser to see the result.</p>
+            </section>
+
+            <section id="contributing">
+                <h2>Contributing</h2>
+                <p>Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are <strong>greatly appreciated</strong>.</p>
+                <p>If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star!</p>
+                <ol>
+                    <li>Fork the Project</li>
+                    <li>Create your Feature Branch (<code>git checkout -b feature/AmazingFeature</code>)</li>
+                    <li>Commit your Changes (<code>git commit -m 'Add some AmazingFeature'</code>)</li>
+                    <li>Push to the Branch (<code>git push origin feature/AmazingFeature</code>)</li>
+                    <li>Open a Pull Request</li>
+                </ol>
+            </section>
+
+            <section id="license">
+                <h2>License</h2>
+                <p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            created with <span class="heart">❤️</span> by <a href="https://github.com/sameer-banchhor-git" target="_blank" rel="noopener noreferrer">sameer banchhor</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
